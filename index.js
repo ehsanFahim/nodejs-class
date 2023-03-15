@@ -1,5 +1,9 @@
-setTimeout(() =>{
-  console.log('This messege will be showed after 2s')
-},2000 ) 
+const fs = require('fs');
 
-console.log(global)
+const data = fs.readFileSync('myfile.txt');
+
+console.log(data.toString());
+
+const a = 10;
+
+console.log(a);
